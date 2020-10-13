@@ -1,5 +1,5 @@
 create table person (
-	id int auto_increment primary key,
+	id int not null auto_increment primary key,
     firstName varchar(45),
     lastName varchar(45),
 	lifeDates varchar(45),

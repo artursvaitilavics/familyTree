@@ -93,4 +93,18 @@ public class Person {
     public void setSiblingId(Integer siblingId) {
         this.siblingId = siblingId;
     }
+
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", lifeDates='" + lifeDates + '\'' +
+                ", fatherId=" + fatherId +
+                ", motherId=" + motherId +
+                ", siblingId=" + siblingId +
+                '}';
+    }
 }

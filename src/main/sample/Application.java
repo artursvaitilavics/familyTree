@@ -9,10 +9,12 @@ import org.hibernate.Transaction;
 public class Application {
     public static void main(String[] args) {
         Person person001 = new Person(
-                "Arturs",
+                "Janis",
                 "Vaitilavics",
-                "born: 030587"
+                "born: 060587"
         );
+
+        person001.setSiblingId(1);
 
         Transaction transaction = null;
 

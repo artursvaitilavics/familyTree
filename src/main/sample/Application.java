@@ -22,5 +22,15 @@ public class Application {
         Person person = repository.retrieveRecord(1);
 
         System.out.println(person.toString());
+
+        person.setFirstName("Arturs");
+        System.out.println(person.toString());
+
+        repository.updateRecord(person);
+
+        person.setFirstName("Andrejs");
+        System.out.println(person.toString());
+
+        repository.createRecord(person);
     }
 }
